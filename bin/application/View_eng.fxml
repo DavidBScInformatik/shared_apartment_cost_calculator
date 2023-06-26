@@ -16,7 +16,7 @@
                   <MenuItem mnemonicParsing="false" text="add Apartment" />
                   <MenuItem mnemonicParsing="false" text="add Room mate" />
                   <SeparatorMenuItem mnemonicParsing="false" />
-                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitProgram" text="Beenden" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitProgram" text="Exit" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Settings">
