@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 import javafx.application.Platform;
+import javafx.scene.control.MenuBar;
 import javafx.scene.control.MenuItem;
 
 public class Controller {
@@ -24,6 +25,9 @@ public class Controller {
     private MenuItem exit;
     
     @FXML
+    private MenuBar menu;
+    
+    @FXML
     void exitProgram(ActionEvent evt) {
     	Platform.exit();
     }
@@ -32,7 +36,10 @@ public class Controller {
     void changeToEnglish(ActionEvent evt){
     	System.out.println("Sprache auf Englisch");
 
-    	Stage stage = new Stage();
+    	Stage stage = (Stage)this.menu.getScene().getWindow();
+    	stage.close();
+    	
+    	stage = new Stage();
 		FXMLLoader fxmlLoader = new FXMLLoader();
 		
 		Pane root = null;
@@ -52,8 +59,11 @@ public class Controller {
     @FXML 
     void changeToGerman(ActionEvent evt){
     	System.out.println("Sprache auf deutsch");
-
-    	Stage stage = new Stage();
+    	
+    	Stage stage = (Stage)this.menu.getScene().getWindow();
+    	stage.close();
+    	
+    	stage = new Stage();
 		FXMLLoader fxmlLoader = new FXMLLoader();
 		
 		Pane root = null;
