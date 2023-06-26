@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Start">
+            <items>
+              <MenuItem fx:id="cost" mnemonicParsing="false" text="Kosten" />
+                  <MenuItem mnemonicParsing="false" text="Wohnung hinzufügen" />
+                  <MenuItem mnemonicParsing="false" text="Bewohner:in hinzufügen" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exitProgram" text="Beenden" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Einstellungen">
+            <items>
+                  <Menu fx:id="language" mnemonicParsing="false" text="Sprache">
+                    <items>
+                        <MenuItem fx:id="englishLang" mnemonicParsing="false" onAction="#changeToEng" text="Englisch" />
+                      <MenuItem mnemonicParsing="false" text="Deutsch" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" text="Kontakt" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</VBox>
